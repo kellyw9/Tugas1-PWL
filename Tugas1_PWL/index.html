@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <style>
+        @keyframes appear {
+            from{
+                opacity: 0;
+                scale: 0.5;
+            }
+            to {
+                opacity: 1;
+                scale: 1;
+            }
+        }
+
+        #education,#contact,#projects{
+            animation: appear linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+        }
+    </style>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Kelly Wong</div>
+        <div>
+            <ul class="nav-links">
+                <!-- <li><a href='#about'>About</a></li> -->
+                <li><a href='#education'>Skills & Education</a></li>
+                <li><a href='#experience'>Work Experience</a></li>
+                <li><a href='#experience'>Projects</a></li>
+                <li><a href='#contact'>Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Kelly Wong</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-link">
+                <li><a href='#about'onclick="toggleMenu()">About</a></li>
+                <li><a href='#experience' onclick="toggleMenu()">Experience</a></li>
+                <li><a href='#projects'onclick="toggleMenu()">Projects</a></li>
+                <li><a href='#contact'onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="nav-back"></div>
+        <div class="section__text">
+            <!-- <p style="color: rgb(255, 227, 66);text-align: center;">Hello I'm </p> -->
+            <h1 class="title ml-5" style="color: #dbf8ff;
+            font-family: Spicy Rice, serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: larger;">KELLY WONG | A Translator</h1>
+            <p style="color: rgb(255, 255, 255); font-size: 1.3rem; text-align:center; font-weight: lighter;">Chinese/English/Indonesia Translator</p>
+            <div class="btn-container">
+                <button class="btn btn-color-1" onclick="window.open('CV Lamaran Kerja - Kelly Wong (1).pdf')">Download CV</button>
+                <div class="socials-container">
+                    <img src="linkedin.png" alt="My Linkedin Profile" class="icon" style="width: 40px; height: 40px;" onclick="location.href='https://www.linkedin.com/in/kelly-wong-aa9848342?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6qMHX%2FISRRy425L9yCUXNw%3D%3D'">
+                    <img src="github.png" alt="My Github Profile" class="icon" style="width: 40px; height: 40px;" onclick="location.href='https://github.com/kellyw9'">
+                    <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-1024.png" alt="My Instagram Profile" style="width: 40px; height: 40px;" class="icon" onclick="location.href='https://www.instagram.com/k3llywong_?igsh=OG50MG1hbm41cHl4'">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="about">
+        <div>
+            <p style="font-size: 2rem; font-weight: semi-bold; text-align: center;">About Me</p>
+            <hr>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-">
+                        <img src="profile2.jpeg" alt="">
+                    </div>
+                    <div class="col">
+                        Saya adalah mahasiswa Semester 2 Program Studi Teknologi Informasi yang sedang menempuh pendidikan di Universitas Sumatera Utara
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section id="education">
+        <div>
+            <p style="font-size: 2rem; font-weight: semi-bold; text-align: center;">Skills & Education</p>
+            <hr>
+            <div class="container-fluid">
+                <h2>SKILLS</h2>
+                <ul style="font-size: larger;">
+                    <li><b>Chinese</b> | Memiliki sertifikasi HSK 4 dengan skor 294/300</li>
+                    <div class="progres">
+                        <div class="progres-bar" style="width: 80%;"></div>
+                      </div>
+                    <li><b>English</b> | Memiliki pengalaman sebagai English Club's President di SMA Negeri 1 Bengkalis</li>
+                    <div class="progres">
+                        <div class="progres-bar" style="width: 60%;"></div>
+                      </div>
+                    <li><b>Indonesia</b> | Memiliki sertifikasi UKBI dengan skor 705/800 </li>
+                    <div class="progres">
+                        <div class="progres-bar" style="width: 90%;"></div>
+                      </div>
+                </ul>
+                <br>
+                <h2>EDUCATION</h2>
+                    
+                        <div class="row text-center">
+                          <div class="card col-4 block ">
+                            <div><img src="115795_study_icon.png" alt="" width="40px" height="40px"></div>
+                            <h2>
+                                Universitas Sumatera Utara
+                            </h2>
+                            <p>2024-ongoing</p>
+                            <p>Program Studi Teknologi Informasi S-1</p>
+                          </div>
+                          <div class="card col-4 block">
+                            <div><img src="115795_study_icon.png" alt="" width="40px" height="40px"></div>
+                            <h2>
+                                SMA Negeri 1 Bengkalis
+                            </h2>
+                            <p>2021-2024</p>
+                            <p>Jurusan IPA</p>
+                          </div>
+                          <div class="card col-4 block">
+                            <div><img src="115795_study_icon.png" alt="" width="40px" height="40px"></div>
+                            <h2>
+                                SMP Negeri 1 Bengkalis
+                            </h2>
+                            <p>2018-2021</p>
+                            <p></p>
+                          </div>
+                        </div>
+                      </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <section id="experience">
+        <div>
+            <p style="font-size: 2rem; font-weight: semi-bold; text-align: center;">Work Experience</p>
+            <hr>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-5 parallax">
+                        
+                    </div>
+                    <div class="col">
+                        <ul style="font-size: larger;">
+                            <li><b>Comic Translator English -> Indonesia</b></li>
+                            <p style="font-size: medium;">Mangatoon | March 2019 - June 2019</p>
+                            <p>Berpengalaman dalam menerjemahkan berbagai genre komik Inggris ke bahasa Indonesia, termasuk penerjemahan istilah dan peribahasa</p>
+                            <br><hr>
+                            <h4 style="text-align: center;" id="projects">Projects</h4>
+                            <ul id="projects">
+                                <br>
+                                <li>Holy Book and Highness episode 124</li>
+                                <li>Cheat-ivator episode 53</li>
+                                <li>Star Guardians episode 31</li>
+                                <li>Vampire Charming episode 184</li>
+                                <li>Being a substitute for President's Bride episode 53</li>
+                                
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+    </section>
+    <section id="contact" class="paralax">
+        <p style="font-size: 2rem; font-weight: semi-bold; text-align: center; color: white;">Contact Me</p>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img src="email.png" alt="Email Icon" width="50px" height="50px" class="icon contact-icon">
+                    <p><a href="mailto:k3llyw9@gmail.com">k3llyw9@gmail.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="linkedin.png" alt="Linkedin Icon" width="40px" height="40px" class="icon contact-icon">
+                    <p><a href="https://www.linkedin.com/in/kelly-wong-aa9848342?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6qMHX%2FISRRy425L9yCUXNw%3D%3D">Kelly Wong</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="github.png" alt="Github Icon" width="40px" height="40px" class="icon contact-icon">
+                    <p><a href="https://github.com/kellyw9">kellyw9</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-1024.png" alt="Instagram Icon" width="40px" height="40px" class="icon contact-icon">
+                    <p><a href="https://www.instagram.com/k3llywong_?igsh=OG50MG1hbm41cHl4">k3llywong_</a></p>
+                </div>
+            </div>
+    </section>
+    <footer style="width: 100% ;margin: 0 auto;
+    background-color:  rgba(0, 0, 0, 0.541); 
+    border: 1px solid #ccc;
+    margin-top: 0;">
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href='#education'>Skills & Education</a></li>
+                    <li><a href='#experience'>Work Experience</a></li>
+                    <li><a href='#experience'>Projects</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                </ul>
+        </div>
+            </div>
+        </nav>
+        <p style="color: rgb(221, 219, 219);">Copyright &#169; 2025 Kelly Wong. All Right Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

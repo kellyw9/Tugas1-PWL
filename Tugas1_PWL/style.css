@@ -1,0 +1,326 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:"Poppins", sans-serif ;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85, 85, 85);
+}
+
+/*Transisi*/
+
+a, .btn{
+    transition: all 300ms ease  ;
+}
+
+/* Desktop Nav  */
+nav, .nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white ;
+}
+
+a:hover{
+    color: rgb(154, 154, 154);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+/* Hamburger Menu */
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span{
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-link{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden !important;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-link a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-link li{
+    list-style: none;
+}
+
+.menu-link.open{
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+.hamburger-icon span:first-child{
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child{
+    transform: none;
+}
+
+/* Sections */
+section{
+    padding-top: 4vh;
+    height: 90vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+.nav-back{
+    width: 100%;
+    height: 110%;
+    background-image: url("profile1.2.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin-top: -6vh;
+}
+
+/* Profile Section */
+#profile{
+    margin: 0;
+    position: relative;
+}
+
+.section__text {
+    width: 50%;
+    position: absolute;
+    bottom: 280px; 
+    left: 70%;
+    transform: translateX(-50%);
+    /* text-align: center; */
+    color: white; 
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0); /* Menambah bayangan agar terbaca */
+}
+
+.socials-container {
+    position: absolute;
+    top: 80%;
+    left: 48%;
+    transform: translate(-20%, -20%);
+    display: flex;
+    gap: 10px;
+}
+
+.title {
+    font-size: 2.3rem;
+}
+
+.block {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:  rgba(172, 172, 172, 0.295) !important; 
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.block:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.progres {
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    height: 15px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+.progres-bar {
+    height: 100%;
+    background-color: #000000;
+    width: 0%;
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}
+
+.parallax{
+    background-image: url("work.jpg");
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.paralax{
+    background-image: url("https://images.freecreatives.com/wp-content/uploads/2015/03/Street-Modern-painting.jpg");
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content {
+position: relative;
+z-index: 1;
+padding: 20px;
+color: white;
+}
+
+/* Buttons */
+.btn-container {
+    display: flex;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 5rem;
+    width: 20rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1 {
+    border:0.1rem solid rgb(0, 0, 0) !important;
+    background-color: white !important;
+    color: black !important;
+    border-radius: 200px !important;
+}
+
+.btn-color-1:hover{
+    cursor: pointer !important;
+    background: rgb(0, 0, 0) !important;
+    color: white !important;
+}
+
+/* Contact */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 1.8px solid;
+    border-color: rgb(163, 163, 163);
+    background-color: rgba(255, 255, 255, 0.493);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+.contact-icon{
+    cursor: default;
+}
+
+/* Footer */
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+}
+
